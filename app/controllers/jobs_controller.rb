@@ -1,4 +1,4 @@
-class JobsController < ApplicationController
+class JobsController < ProtectedController
   before_action :set_job, only: [:show, :update, :destroy]
 
   # GET /jobs
@@ -15,7 +15,7 @@ class JobsController < ApplicationController
 
   # POST /jobs
   def create
-    @job = Job.new(job_params)
+    @job = current_user.Job.new(job_params)
 
     if @job.save
       render json: @job, status: :created, location: @job
@@ -41,7 +41,7 @@ class JobsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_job
-      @job = Job.find(params[:id])
+      @job = current_user.Job.find(params[:id])
     end
 
     # Only allow a trusted parameter "white list" through.
