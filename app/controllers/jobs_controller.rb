@@ -15,7 +15,7 @@ class JobsController < ProtectedController
 
   # POST /jobs
   def create
-    @job = current_user.Job.new(job_params)
+    @job = current_user.jobs.build(job_params)
 
     if @job.save
       render json: @job, status: :created, location: @job
