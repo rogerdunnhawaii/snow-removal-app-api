@@ -1,3 +1,14 @@
+Link to other repo (client-side)
+https://github.com/rogerdunnhawaii/snow-removal-app-client
+
+Technologies Used
+1) Ruby on Rails
+2) Heroku
+
+Unsolved problems
+1) Want to do many-to-many relationship
+
+planning, development process and problem-solving strategy (see below):
 
 ## Project Idea
 
@@ -48,6 +59,7 @@ These are the diagrams that show how your tables are related to one another
 (one to many, many to many, etc).
 
 Include an image (or a link to image) below.
+[see pictures link:](https://drive.google.com/drive/folders/1-797sDI8PbhZNjS5wJBIyHJMs7xfF8PH)
 
 ```md
 MVP:
