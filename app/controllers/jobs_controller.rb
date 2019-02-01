@@ -3,7 +3,7 @@ class JobsController < ProtectedController
 
   # GET /jobs
   def index
-    @jobs = Job.all
+    @jobs = current_user.jobs.all
 
     render json: @jobs
   end
