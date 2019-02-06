@@ -1,6 +1,12 @@
 Link to other repo (client-side)
 https://github.com/rogerdunnhawaii/snow-removal-app-client
 
+Link to deployed API:
+https://sleepy-gorge-26062.herokuapp.com/
+
+Link to deployed client:
+https://rogerdunnhawaii.github.io/snow-removal-app-client/
+
 Description of what the app does and how it works:
 
 We have a front end app called snow-removal-app-client and a back-end api called snow-removal-api hosted by heroku.  The client makes requests to the api for information.  The client allows for user authentication and form submission and manipulation of information pertaining to snow removal jobs.  The api is setup for a one-to-many relationship between users and jobs.
